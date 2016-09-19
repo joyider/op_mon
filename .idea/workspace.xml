@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="50bd6168-1957-41b2-936f-f4b136062d6d" name="Default" comment="" />
+    <ignored path="op_mon.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="op_mon" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="op_mon.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/op_mon.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="32" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ora_checks.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ora_core/ora_checks.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1490">
+              <caret line="517" column="22" selection-start-line="517" selection-start-column="22" selection-end-line="517" selection-end-column="22" />
+              <folding>
+                <marker date="1474272402645" expanded="true" signature="113:373" ph="select to_ch... count" />
+                <marker date="1474272402645" expanded="true" signature="224:372" ph="select count... v$instance" />
+                <marker date="1474272402645" expanded="true" signature="560:1008" ph="SELECT to_ch... v$sysstat" />
+                <marker date="1474272402645" expanded="true" signature="1194:1424" ph="SELECT to_ch... v$sysstat" />
+                <marker date="1474272402645" expanded="true" signature="1618:1770" ph="select to_ch... v$session" />
+                <marker date="1474272402645" expanded="true" signature="1966:2590" ph="SELECT to_ch... dba_tablespaces" />
+                <marker date="1474272402645" expanded="true" signature="2132:2233" ph="select table... dba_data_files" />
+                <marker date="1474272402645" expanded="true" signature="2255:2356" ph="select table... dba_free_space" />
+                <marker date="1474272402645" expanded="true" signature="2779:2873" ph="select to_ch... dba_data_files" />
+                <marker date="1474272402645" expanded="true" signature="3061:3104" ph="select banne... v$version" />
+                <marker date="1474272402645" expanded="true" signature="3293:3401" ph="select to_ch... v$instance" />
+                <marker date="1474272402645" expanded="true" signature="3588:3700" ph="select to_ch... v$sysstat" />
+                <marker date="1474272402645" expanded="true" signature="3891:4008" ph="select to_ch... v$sysstat" />
+                <marker date="1474272402645" expanded="true" signature="4184:4301" ph="select to_ch... v$sysstat" />
+                <marker date="1474272402645" expanded="true" signature="4480:4591" ph="select to_ch... v$sysstat" />
+                <marker date="1474272402645" expanded="true" signature="4782:4907" ph="select to_ch... v$sysstat" />
+                <marker date="1474272402645" expanded="true" signature="5099:5221" ph="select to_ch... v$sysstat" />
+                <marker date="1474272402645" expanded="true" signature="5415:5543" ph="select to_ch... v$sysstat" />
+                <marker date="1474272402645" expanded="true" signature="5727:5923" ph="SELECT to_ch... v$sysstat" />
+                <marker date="1474272402645" expanded="true" signature="6120:6252" ph="select to_ch... v$sysstat" />
+                <marker date="1474272402645" expanded="true" signature="6455:6593" ph="select to_ch... v$sysstat" />
+                <marker date="1474272402645" expanded="true" signature="6797:6930" ph="select to_ch... v$sysstat" />
+                <marker date="1474272402645" expanded="true" signature="7115:7229" ph="select to_ch... v$sysstat" />
+                <marker date="1474272402645" expanded="true" signature="7423:7535" ph="select to_ch... v$log" />
+                <marker date="1474272402645" expanded="true" signature="7798:7984" ph="select to_ch... v$loghist" />
+                <marker date="1474272402645" expanded="true" signature="8171:8364" ph="select to_ch... v$system_event" />
+                <marker date="1474272402645" expanded="true" signature="8551:8744" ph="select to_ch... v$system_event" />
+                <marker date="1474272402645" expanded="true" signature="8943:9145" ph="select to_ch... v$system_event" />
+                <marker date="1474272402645" expanded="true" signature="9327:9516" ph="select to_ch... v$system_event" />
+                <marker date="1474272402645" expanded="true" signature="9709:9908" ph="select to_ch... v$system_event" />
+                <marker date="1474272402645" expanded="true" signature="10086:10269" ph="select to_ch... v$system_event" />
+                <marker date="1474272402645" expanded="true" signature="10465:10664" ph="select to_ch... v$system_event" />
+                <marker date="1474272402645" expanded="true" signature="10855:11053" ph="select to_ch... v$system_event" />
+                <marker date="1474272402645" expanded="true" signature="11242:11438" ph="select to_ch... v$system_event" />
+                <marker date="1474272402645" expanded="true" signature="11629:11827" ph="select to_ch... v$system_event" />
+                <marker date="1474272402645" expanded="true" signature="12011:12203" ph="select to_ch... v$system_event" />
+                <marker date="1474272402645" expanded="true" signature="12389:12582" ph="select to_ch... v$system_event" />
+                <marker date="1474272402645" expanded="true" signature="12759:12945" ph="select to_ch... v$system_event" />
+                <marker date="1474272402645" expanded="true" signature="13141:13574" ph="SELECT df.ta... sm$ts_free" />
+                <marker date="1474272402645" expanded="true" signature="13306:13409" ph="SELECT table... sm$ts_avail" />
+                <marker date="1474272402645" expanded="true" signature="13790:14230" ph="SELECT df.ta... tablespace_name" />
+                <marker date="1474272402645" expanded="true" signature="13897:14003" ph="select table... dba_data_files" />
+                <marker date="1474272402645" expanded="true" signature="14026:14133" ph="select sum(b... dba_segments" />
+                <marker date="1474272402645" expanded="true" signature="14478:14532" ph="SELECT table... dba_tablespaces" />
+                <marker date="1474272402645" expanded="true" signature="14913:14999" ph="SELECT TABLE... DBA_TABLESPACES" />
+                <marker date="1474272402645" expanded="true" signature="15327:15464" ph="select trunc... v$asm_diskgroup_stat" />
+                <marker date="1474272402645" expanded="true" signature="15711:15759" ph="select NAME v$asm_diskgroup_stat" />
+                <marker date="1474272402645" expanded="true" signature="16082:16192" ph="select round... v$asm_diskgroup_stat" />
+                <marker date="1474272402645" expanded="true" signature="16383:16428" ph="SELECT count... gv$lock" />
+                <marker date="1474272402645" expanded="true" signature="16609:16657" ph="select COUNT... v$LOG" />
+                <marker date="1474272402645" expanded="true" signature="16844:16968" ph="select nvl(t... gv$transaction" />
+                <marker date="1474272402645" expanded="true" signature="17154:17248" ph="select count... gv$session" />
+                <marker date="1474272402645" expanded="true" signature="17454:17616" ph="SELECT round... dba_temp_free_space" />
+                <marker date="1474272402645" expanded="true" signature="17837:17944" ph="select value... v$sysmetric" />
+                <marker date="1474272402645" expanded="true" signature="18174:18287" ph="select round... V$RECOVERY_FILE_DEST" />
+                <marker date="1474272402645" expanded="true" signature="18494:18535" ph="SELECT usern... dba_users" />
+                <marker date="1474272402645" expanded="true" signature="18876:18933" ph="SELECT accou... dba_users" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Flask Main" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/ora_core/ora_checks.py" />
+        <option value="$PROJECT_DIR$/ora_core/__init__.py" />
+        <option value="$PROJECT_DIR$/op_mon.py" />
+        <option value="$PROJECT_DIR$/README.md" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="542" />
+    <option name="y" value="122" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="op_mon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="op_mon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="op_mon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="op_mon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="op_mon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ora_core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+  </component>
+  <component name="RunManager" selected="Python.op_mon">
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="op_mon" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="op_mon" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="op_mon" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="op_mon" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <module name="op_mon" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="op_mon" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="op_mon" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="op_mon" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="op_mon" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="op_mon" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="op_mon" type="PythonConfigurationType" factoryName="Python" singleton="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="op_mon" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/op_mon.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Python.op_mon" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="50bd6168-1957-41b2-936f-f4b136062d6d" name="Default" comment="" />
+      <created>1474268705554</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1474268705554</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="542" y="122" width="1400" height="1000" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/op_mon.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ora_core/ora_checks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1490">
+          <caret line="517" column="22" selection-start-line="517" selection-start-column="22" selection-end-line="517" selection-end-column="22" />
+          <folding>
+            <marker date="1474272402645" expanded="true" signature="113:373" ph="select to_ch... count" />
+            <marker date="1474272402645" expanded="true" signature="224:372" ph="select count... v$instance" />
+            <marker date="1474272402645" expanded="true" signature="560:1008" ph="SELECT to_ch... v$sysstat" />
+            <marker date="1474272402645" expanded="true" signature="1194:1424" ph="SELECT to_ch... v$sysstat" />
+            <marker date="1474272402645" expanded="true" signature="1618:1770" ph="select to_ch... v$session" />
+            <marker date="1474272402645" expanded="true" signature="1966:2590" ph="SELECT to_ch... dba_tablespaces" />
+            <marker date="1474272402645" expanded="true" signature="2132:2233" ph="select table... dba_data_files" />
+            <marker date="1474272402645" expanded="true" signature="2255:2356" ph="select table... dba_free_space" />
+            <marker date="1474272402645" expanded="true" signature="2779:2873" ph="select to_ch... dba_data_files" />
+            <marker date="1474272402645" expanded="true" signature="3061:3104" ph="select banne... v$version" />
+            <marker date="1474272402645" expanded="true" signature="3293:3401" ph="select to_ch... v$instance" />
+            <marker date="1474272402645" expanded="true" signature="3588:3700" ph="select to_ch... v$sysstat" />
+            <marker date="1474272402645" expanded="true" signature="3891:4008" ph="select to_ch... v$sysstat" />
+            <marker date="1474272402645" expanded="true" signature="4184:4301" ph="select to_ch... v$sysstat" />
+            <marker date="1474272402645" expanded="true" signature="4480:4591" ph="select to_ch... v$sysstat" />
+            <marker date="1474272402645" expanded="true" signature="4782:4907" ph="select to_ch... v$sysstat" />
+            <marker date="1474272402645" expanded="true" signature="5099:5221" ph="select to_ch... v$sysstat" />
+            <marker date="1474272402645" expanded="true" signature="5415:5543" ph="select to_ch... v$sysstat" />
+            <marker date="1474272402645" expanded="true" signature="5727:5923" ph="SELECT to_ch... v$sysstat" />
+            <marker date="1474272402645" expanded="true" signature="6120:6252" ph="select to_ch... v$sysstat" />
+            <marker date="1474272402645" expanded="true" signature="6455:6593" ph="select to_ch... v$sysstat" />
+            <marker date="1474272402645" expanded="true" signature="6797:6930" ph="select to_ch... v$sysstat" />
+            <marker date="1474272402645" expanded="true" signature="7115:7229" ph="select to_ch... v$sysstat" />
+            <marker date="1474272402645" expanded="true" signature="7423:7535" ph="select to_ch... v$log" />
+            <marker date="1474272402645" expanded="true" signature="7798:7984" ph="select to_ch... v$loghist" />
+            <marker date="1474272402645" expanded="true" signature="8171:8364" ph="select to_ch... v$system_event" />
+            <marker date="1474272402645" expanded="true" signature="8551:8744" ph="select to_ch... v$system_event" />
+            <marker date="1474272402645" expanded="true" signature="8943:9145" ph="select to_ch... v$system_event" />
+            <marker date="1474272402645" expanded="true" signature="9327:9516" ph="select to_ch... v$system_event" />
+            <marker date="1474272402645" expanded="true" signature="9709:9908" ph="select to_ch... v$system_event" />
+            <marker date="1474272402645" expanded="true" signature="10086:10269" ph="select to_ch... v$system_event" />
+            <marker date="1474272402645" expanded="true" signature="10465:10664" ph="select to_ch... v$system_event" />
+            <marker date="1474272402645" expanded="true" signature="10855:11053" ph="select to_ch... v$system_event" />
+            <marker date="1474272402645" expanded="true" signature="11242:11438" ph="select to_ch... v$system_event" />
+            <marker date="1474272402645" expanded="true" signature="11629:11827" ph="select to_ch... v$system_event" />
+            <marker date="1474272402645" expanded="true" signature="12011:12203" ph="select to_ch... v$system_event" />
+            <marker date="1474272402645" expanded="true" signature="12389:12582" ph="select to_ch... v$system_event" />
+            <marker date="1474272402645" expanded="true" signature="12759:12945" ph="select to_ch... v$system_event" />
+            <marker date="1474272402645" expanded="true" signature="13141:13574" ph="SELECT df.ta... sm$ts_free" />
+            <marker date="1474272402645" expanded="true" signature="13306:13409" ph="SELECT table... sm$ts_avail" />
+            <marker date="1474272402645" expanded="true" signature="13790:14230" ph="SELECT df.ta... tablespace_name" />
+            <marker date="1474272402645" expanded="true" signature="13897:14003" ph="select table... dba_data_files" />
+            <marker date="1474272402645" expanded="true" signature="14026:14133" ph="select sum(b... dba_segments" />
+            <marker date="1474272402645" expanded="true" signature="14478:14532" ph="SELECT table... dba_tablespaces" />
+            <marker date="1474272402645" expanded="true" signature="14913:14999" ph="SELECT TABLE... DBA_TABLESPACES" />
+            <marker date="1474272402645" expanded="true" signature="15327:15464" ph="select trunc... v$asm_diskgroup_stat" />
+            <marker date="1474272402645" expanded="true" signature="15711:15759" ph="select NAME v$asm_diskgroup_stat" />
+            <marker date="1474272402645" expanded="true" signature="16082:16192" ph="select round... v$asm_diskgroup_stat" />
+            <marker date="1474272402645" expanded="true" signature="16383:16428" ph="SELECT count... gv$lock" />
+            <marker date="1474272402645" expanded="true" signature="16609:16657" ph="select COUNT... v$LOG" />
+            <marker date="1474272402645" expanded="true" signature="16844:16968" ph="select nvl(t... gv$transaction" />
+            <marker date="1474272402645" expanded="true" signature="17154:17248" ph="select count... gv$session" />
+            <marker date="1474272402645" expanded="true" signature="17454:17616" ph="SELECT round... dba_temp_free_space" />
+            <marker date="1474272402645" expanded="true" signature="17837:17944" ph="select value... v$sysmetric" />
+            <marker date="1474272402645" expanded="true" signature="18174:18287" ph="select round... V$RECOVERY_FILE_DEST" />
+            <marker date="1474272402645" expanded="true" signature="18494:18535" ph="SELECT usern... dba_users" />
+            <marker date="1474272402645" expanded="true" signature="18876:18933" ph="SELECT accou... dba_users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ora_core/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/op_mon.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="32" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
