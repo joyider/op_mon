@@ -1,4 +1,30 @@
+import cx_Oracle
+
+class Database(object):
+
+    def __init__(self):
+        self._connections = []
+
+    def db_connect(self, dbs):
+        for db in dbs:
+            db_c = cx_Oracle.connect("{0}/{1}@{2}/{3}".format(
+                db[0], db[1], db[2], db[3]))
+            self._connections.append(db_c)
+
+
+    def add_connection(self,db):
+        self._connections.append(cx_Oracle.connect("{0}/{1}@{2}/{3}".format(
+                db[0], db[1], db[2], db[3])))
+
+    def db_logout(self):
+        for connection in self._connections:
+            connection.close()
+
+
 class Checks(object):
+
+    def __init__(self, cursor):
+        self.cur = cursor
 
     def check_active(self):
         """Check Intance is active and open"""
