@@ -20,7 +20,12 @@
   <!-- Mobile viewport optimized: h5bp.com/viewport -->
   <meta name="viewport" content="width=device-width">
 
-  <link rel="stylesheet" href="{{ url_for('static', filename='libs/font-awesome4/css/font-awesome.min.css') }}">
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="css/text" href="{{ url_for('static', filename='libs/font-awesome4/css/font-awesome.min.css') }}">
+  <link rel="stylesheet" type="css/text" href="{{ url_for('static', filename='libs/simple-line-icons/simple-line-icons.min.css') }}">
+  <link rel="stylesheet" type="css/text" href="{{ url_for('static', filename='libs/uniform/css/uniform.default.css') }}">
+  <link rel="stylesheet" type="css/text" href="{{ url_for('static', filename='libs/bootstrap-switch/css/bootstrap-switch.min.css') }}">
+
   {% assets "css_all" %}
     <link rel="stylesheet" href="{{ ASSET_URL }}">
   {% endassets %}

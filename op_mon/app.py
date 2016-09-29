@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """The app module, containing the app factory function."""
 from flask import Flask, render_template
+from flask_themes2 import Themes
 
 from op_mon import commands, public, user
 from op_mon.assets import assets
@@ -20,6 +21,7 @@ def create_app(config_object=ProdConfig):
     register_errorhandlers(app)
     register_shellcontext(app)
     register_commands(app)
+    Themes(app, app_identifier='op_mon', theme_url_prefix='/themes')
     return app
 
 

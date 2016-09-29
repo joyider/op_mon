@@ -1,0 +1,9 @@
+{
+    "application": "op_mon",
+    "identifier": "cookie",
+    "name": "Cookie",
+    "author": "Joyider",
+    "license": "MIT/X11",
+    "description": "Cookiecutter theme based on cookiecutter-flask",
+    "version": "1.0.0"
+}

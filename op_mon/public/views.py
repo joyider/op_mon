@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 """Public section, including homepage and signup."""
-from flask import Blueprint, flash, redirect, render_template, request, url_for
+from flask import Blueprint, flash, redirect, render_template, request, url_for, current_app, session
 from flask_login import login_required, login_user, logout_user
+from flask_themes2 import render_theme_template, get_theme, get_themes_list
 
 from op_mon.extensions import login_manager
 from op_mon.public.forms import LoginForm
@@ -60,4 +61,17 @@ def register():
 def about():
     """About page."""
     form = LoginForm(request.form)
-    return render_template('public/about.html', form=form)
+    return render_theme_template(session.get('theme', current_app.config['DEFAULT_THEME']), 'public/about.html', form=form)
+
+@blueprint.route('/themes/')
+def themes():
+    """Theme Page."""
+    themes = get_themes_list()
+    return render_theme_template(current_app.name, 'public/themes.html', themes=themes)
+
+@blueprint.route('/themes/<ident>')
+def settheme(ident):
+    if ident not in current_app.theme_manager.themes:
+        abort(404)
+    session['theme'] = ident
+    return redirect(url_for('public.themes'))

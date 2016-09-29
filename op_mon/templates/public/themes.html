@@ -1,0 +1,28 @@
+
+{% extends "layout.html" %}
+{% macro link_to(text, endpoint) -%}
+<a href="{{ url_for(endpoint, **kwargs) }}">{{ text }}</a>
+{%- endmacro %}
+
+{% set title = 'Themes' %}
+
+{% block content %}
+    <h2>Theme Selection</h2>
+<div class="body-content">
+      {% for theme in themes %}
+     <div class="row">
+<h3>{{ theme.name }}</h3>
+
+<p class=meta>
+    By {{ theme.author }}{% if theme.license %}, license: {{ theme.license }}{% endif %}
+</p>
+
+<p>{{ theme.description }}</p>
+
+<p class=select>{{ link_to('Select this theme', 'public.settheme', ident=theme.identifier) }}</p>
+          </div>
+
+{% endfor %}
+</div>
+{% endblock %}
+

@@ -1,0 +1,9 @@
+{
+    "application": "op_mon",
+    "identifier": "the_moon",
+    "name": "The Moon",
+    "author": "Joyider",
+    "license": "MIT/X11",
+    "description": "Default Light moon theme for OP_MON",
+    "version": "0.0.1"
+}
