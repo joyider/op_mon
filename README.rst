@@ -82,6 +82,7 @@ For a full migration command reference, run ``flask db --help``.
 
 Create Oracle User
 ------------------
+To set up the user you need to add this schema using the following grants. ::
 
     CREATE USER OP_MON IDENTIFIED BY DEFAULT TABLESPACE SYSTEM TEMPORARY TABLESPACE TEMP PROFILE DEFAULT ACCOUNT UNLOCK;
     GRANT CONNECT TO OP_MON;
