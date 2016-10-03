@@ -40,3 +40,6 @@ Flask-Caching>=1.0.0
 
 # Debug toolbar
 Flask-DebugToolbar==0.10.0
+
+#Windows Stuff
+wmi==1.4.9

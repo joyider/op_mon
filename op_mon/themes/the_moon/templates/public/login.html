@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!--
+Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.5
+Version: 4.5
+Author: KeenThemes
+Website: http://www.keenthemes.com/
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Like: www.facebook.com/keenthemes
+Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
+License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
+-->
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+    <!--<![endif]-->
+    <!-- BEGIN HEAD -->
+
+    <head>
+        <meta charset="utf-8" />
+        <title>OP_Mon|Login</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta content="" name="description" />
+        <meta content="" name="author" />
+        <!-- BEGIN GLOBAL MANDATORY STYLES -->
+        {% assets "css_all" %}
+            <link rel="stylesheet" href="{{ ASSET_URL }}">
+        {% endassets %}
+        <!-- END GLOBAL MANDATORY STYLES -->
+        <!-- BEGIN PAGE LEVEL PLUGINS -->
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='libs/select2/css/select2.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='libs/select2/css/select2-bootstrap.min.css') }}">
+        <!-- END PAGE LEVEL PLUGINS -->
+        <!-- BEGIN THEME GLOBAL STYLES -->
+        <link rel="stylesheet" type="text/css" href="{{ theme_static('css/components.min.css') }}">
+        <!-- END THEME GLOBAL STYLES -->
+        <!-- BEGIN PAGE LEVEL STYLES -->
+        <link rel="stylesheet" type="text/css" href="{{ theme_static('css/login.min.css') }}">
+        <!-- END PAGE LEVEL STYLES -->
+        <!-- BEGIN THEME LAYOUT STYLES -->
+        <!-- END THEME LAYOUT STYLES -->
+        <link rel="shortcut icon" href="favicon.ico" /> </head>
+
+
+    <!-- END HEAD -->
+        {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+    <div class="row">
+      <div class="col-md-12">
+        {% for category, message in messages %}
+        <div class="alert alert-{{ category }}">
+          <a class="close" title="Close" href="#" data-dismiss="alert">&times;</a>
+         {{message}}
+        </div><!-- end .alert -->
+        {% endfor %}
+      </div><!-- end col-md -->
+    </div><!-- end row -->
+        {% endif %}
+    {% endwith %}
+    <body class=" login">
+        <!-- BEGIN : LOGIN PAGE 5-1 -->
+        <div class="user-login-5">
+            <div class="row bs-reset">
+                <div class="col-md-6 bs-reset">
+                    <div class="login-bg" style="background-image:url({{ theme_static('img/login/bg1.jpg') }})">
+                        <img class="login-logo" src="{{ theme_static('img/login/logo.png') }}" /> </div>
+                </div>
+                <div class="col-md-6 login-container bs-reset">
+                    <div class="login-content">
+                        <h1>OP_MON Login page</h1>
+                        <p> Lorem ipsum dolor sit amet, coectetuer adipiscing elit sed diam nonummy et nibh euismod aliquam erat volutpat. Lorem ipsum dolor sit amet, coectetuer adipiscing. </p>
+                        <form id="loginForm" method="POST" action="/login/" class="login-form" role="login" >
+                        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    {{ form.username(placeholder="Username", class_="form-control login-password") }} </div>
+                                <div class="col-xs-6">
+                                    {{ form.password(placeholder="Password", class_="form-control login-password") }} </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="rem-password">
+                                        <p>Remember Me
+                                            <input type="checkbox" class="rem-checkbox" />
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-8 text-right">
+                                    <div class="forgot-password">
+                                        <a href="javascript:;">Forgot Password?</a>
+                                    </div>
+                                    <button class="btn blue" type="submit">Sign In</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="login-footer">
+                        <div class="row bs-reset">
+                            <div class="col-xs-4 bs-reset">
+                                <ul class="login-social">
+                                    <li>
+                                        <a href="javascript:;">
+                                            <i class="icon-social-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">
+                                            <i class="icon-social-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">
+                                            <i class="icon-social-dribbble"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-8 bs-reset">
+                                <div class="login-copyright text-right">
+                                    <p>Copyright &copy; Keenthemes 2015</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END : LOGIN PAGE 5-1 -->
+        <!--[if lt IE 9]>
+<script src="../assets/global/plugins/respond.min.js"></script>
+<script src="../assets/global/plugins/excanvas.min.js"></script>
+<![endif]-->
+        <!-- BEGIN CORE PLUGINS -->
+        {% assets "js_all" %}
+            <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+        {% endassets %}
+        <!-- END CORE PLUGINS -->
+        <!-- BEGIN PAGE LEVEL PLUGINS -->
+        <script type="text/javascript" src="{{ url_for('static', filename='libs/jquery-validation/js/jquery.validate.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='libs/jquery-validation/js/additional-methods.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='libs/select2/js/select2.full.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='libs/backstretch/jquery.backstretch.min.js') }}"></script>
+        <!-- END PAGE LEVEL PLUGINS -->
+        <!-- BEGIN THEME GLOBAL SCRIPTS -->
+        <!-- END THEME GLOBAL SCRIPTS -->
+        <!-- BEGIN PAGE LEVEL SCRIPTS -->
+        <script type="text/javascript" src="{{ theme_static('js/login.min.js') }}"></script>
+        <!-- END PAGE LEVEL SCRIPTS -->
+        <!-- BEGIN THEME LAYOUT SCRIPTS -->
+        <!-- END THEME LAYOUT SCRIPTS -->
+    </body>
+
+</html>

@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """Public section, including homepage and signup."""
-from flask import Blueprint, flash, redirect, render_template, request, url_for, current_app, session
-from flask_login import login_required, login_user, logout_user
-from flask_themes2 import render_theme_template, get_theme, get_themes_list
+from flask import Blueprint, flash, redirect, render_template, request, current_app, session, g, app
+from flask_login import login_required, login_user, logout_user, current_user
+from flask_themes2 import render_theme_template, get_theme, get_themes_list, url_for
 
 from op_mon.extensions import login_manager
 from op_mon.public.forms import LoginForm
@@ -12,27 +12,20 @@ from op_mon.utils import flash_errors
 
 blueprint = Blueprint('public', __name__, static_folder='../static')
 
-
 @login_manager.user_loader
 def load_user(user_id):
     """Load user by ID."""
     return User.get_by_id(int(user_id))
 
 
-@blueprint.route('/', methods=['GET', 'POST'])
+@blueprint.route('/')
 def home():
     """Home page."""
-    form = LoginForm(request.form)
     # Handle logging in
-    if request.method == 'POST':
-        if form.validate_on_submit():
-            login_user(form.user)
-            flash('You are logged in.', 'success')
-            redirect_url = request.args.get('next') or url_for('user.members')
-            return redirect(redirect_url)
-        else:
-            flash_errors(form)
-    return render_template('public/home.html', form=form)
+    if current_user.is_authenticated:
+        return render_theme_template(session.get('theme', current_app.config['DEFAULT_THEME']), 'users/dashboard.html')
+    else:
+        return redirect(url_for('public.login'), code=302)
 
 
 @blueprint.route('/logout/')
@@ -57,12 +50,23 @@ def register():
     return render_template('public/register.html', form=form)
 
 
-@blueprint.route('/about/')
-def about():
-    """About page."""
+@blueprint.route('/login/', methods=['GET', 'POST'])
+def login():
+    """Login Page."""
     form = LoginForm(request.form)
-    return render_theme_template(session.get('theme', current_app.config['DEFAULT_THEME']), 'public/about.html', form=form)
+    # Handle logging in
+    if request.method == 'POST':
+        if form.validate_on_submit():
+            login_user(form.user)
+            flash('You are logged in.', 'success')
+            redirect_url = request.args.get('next') or url_for('user.dashboard')
+            return redirect(redirect_url)
+        else:
+            flash_errors(form)
+    return render_theme_template(session.get('theme', current_app.config['DEFAULT_THEME']), 'public/login.html', form=form)
 
+
+# Below here is only code for development and theme testing
 @blueprint.route('/themes/')
 def themes():
     """Theme Page."""

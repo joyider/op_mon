@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """User models."""
 import datetime as dt
+from uuid import uuid1
 
 from flask_login import UserMixin
 
@@ -23,6 +24,43 @@ class Role(SurrogatePK, Model):
     def __repr__(self):
         """Represent instance as a unique string."""
         return '<Role({name})>'.format(name=self.name)
+
+
+class Host(SurrogatePK, Model):
+	__tablename__ = 'hosts'
+	uuid = Column(db.String(36), unique=True, nullable=False)
+	hostname = Column(db.String(255), nullable=False)
+	ip = Column(db.String(15), nullable=False)
+	username = Column(db.String(32), nullable=False)
+	password = Column(db.String(128), nullable=False)
+	created_at = Column(db.DateTime, nullable=False, default=dt.datetime.utcnow)
+	active = Column(db.Boolean(), default=True)
+	nix = Column(db.Boolean(), default=True)
+	remote = Column(db.Boolean(), default=True)
+
+	def __init__(self, hostname, ip, username, password, **kwargs):
+		db.Model.__init__(self, uuid=uuid, hostname=hostname, ip=ip, username=username, password=password, **kwargs)
+		self.set_password(password)
+		self.set_uuid(hostname)
+
+
+	def set_password(self, password):
+		"""Set password."""
+		self.password = bcrypt.generate_password_hash(password)
+
+
+	def set_uuid(self,hostname):
+		"""
+
+		:param hostname:
+		:return: Uuid for the host
+		"""
+		self.uuid = uuid1(hostname)
+
+
+	def __repr__(self):
+		return '<Host({uuid!r})>'.format(uuid=self.uuid)
+
 
 
 class User(UserMixin, SurrogatePK, Model):

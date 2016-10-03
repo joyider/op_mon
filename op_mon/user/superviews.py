@@ -18,23 +18,16 @@
 #    along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
 #
 # Filename:  by: andrek
-# Timesamp: 10/1/16 :: 09:42 AM
+# Timesamp: 10/4/16 :: 12:42 AM
 from flask import Blueprint, render_template, session, current_app
 from flask_login import login_required
 from flask_themes2 import render_theme_template
+from op_mon.utils import admin_required
 
-blueprint = Blueprint('user', __name__, url_prefix='/users', static_folder='../static')
+blueprint = Blueprint('admin', __name__, url_prefix='/user', static_folder='../static')
 
-
-@blueprint.route('/')
-@login_required
-def members():
+@blueprint.route('/hosts/')
+@admin_required
+def hosts():
     """List members."""
-    return render_theme_template(session.get('theme', current_app.config['DEFAULT_THEME']), 'users/members.html')
-
-
-@blueprint.route('/dashboard/')
-@login_required
-def dashboard():
-    """About page."""
     return render_theme_template(session.get('theme', current_app.config['DEFAULT_THEME']), 'users/dashboard.html')

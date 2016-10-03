@@ -33,6 +33,7 @@ def register_extensions(app):
     db.init_app(app)
     csrf_protect.init_app(app)
     login_manager.init_app(app)
+    login_manager.login_view = "public.login"
     debug_toolbar.init_app(app)
     migrate.init_app(app, db)
     return None
@@ -42,6 +43,7 @@ def register_blueprints(app):
     """Register Flask blueprints."""
     app.register_blueprint(public.views.blueprint)
     app.register_blueprint(user.views.blueprint)
+    app.register_blueprint(user.superviews.blueprint)
     return None
 
 
