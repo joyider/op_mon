@@ -24,10 +24,10 @@ from flask_login import login_required
 from flask_themes2 import render_theme_template
 from op_mon.utils import admin_required
 
-blueprint = Blueprint('admin', __name__, url_prefix='/user', static_folder='../static')
+blueprint = Blueprint('admin', __name__, url_prefix='/admin', static_folder='../static')
 
 @blueprint.route('/hosts/')
-@admin_required
+#@admin_required
 def hosts():
     """List members."""
     return render_theme_template(session.get('theme', current_app.config['DEFAULT_THEME']), 'users/dashboard.html')
