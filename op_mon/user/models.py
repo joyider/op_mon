@@ -30,7 +30,7 @@ class Host(SurrogatePK, Model):
 	__tablename__ = 'hosts'
 	uuid = Column(db.String(36), unique=True, nullable=False)
 	hostname = Column(db.String(255), nullable=False)
-	ip = Column(db.String(15), nullable=False)
+	ip = Column(db.String(15), nullable=True)
 	username = Column(db.String(32), nullable=False)
 	password = Column(db.String(128), nullable=False)
 	created_at = Column(db.DateTime, nullable=False, default=dt.datetime.utcnow)

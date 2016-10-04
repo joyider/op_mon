@@ -11,3 +11,5 @@
 #
 # Filename: __init__.py by: andrek
 # Timesamp: 2016-10-04 :: 11:51
+
+from . import superviews

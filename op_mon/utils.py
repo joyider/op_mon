@@ -14,7 +14,7 @@ def flash_errors(form, category='warning'):
 		for error in errors:
 			flash('{0} - {1}'.format(getattr(form, field).label.text, error), category)
 
-
+#TODO: Not working 161004 //Joyider
 def admin_required(f):
 	@wraps(f)
 	def decorated_function(*args, **kwargs):

@@ -32,19 +32,17 @@
   <!-- BEGIN THEME GLOBAL STYLES -->
    <!-- END THEME GLOBAL STYLES -->
    <!-- BEGIN THEME LAYOUT STYLES -->
-    <link rel="stylesheet" type="text/css" href="{{ theme_static('css/layout.min.css') }}">
-     <link rel="stylesheet" type="text/css" id="style_color" href="{{ theme_static('css/themes/light.min.css') }}">
-     <link rel="stylesheet" type="text/css" href="{{ theme_static('css/custom.min.css') }}">
 {% assets "css_all" %}
     <link rel="stylesheet" href="{{ ASSET_URL }}">
   {% endassets %}
+    <link rel="stylesheet" type="text/css" href="{{ theme_static('css/layout.min.css') }}">
+     <link rel="stylesheet" type="text/css" id="style_color" href="{{ theme_static('css/themes/light.min.css') }}">
+     <link rel="stylesheet" type="text/css" href="{{ theme_static('css/custom.min.css') }}">
 
   {% block css %}{% endblock %}
 
    <!-- END THEME LAYOUT STYLES -->
 
-
-<!--  <link rel="shortcut icon" href="favicon.ico" /> -->
 <!-- END HEAD -->
 
 </head>
@@ -54,7 +52,7 @@
 {% block body %}
 {% include theme('top.html') %}
 {% include theme('nav.html') %}
-<div class="{% block content_class %}container{% endblock content_class %}">
+
 
   <div role="main">
     {% with messages = get_flashed_messages(with_categories=true) %}
@@ -75,7 +73,7 @@
     {% block content %}{% endblock %}
   </div>
 
-</div><!-- end container -->
+
 
 {% include theme('footer.html') %}
 
@@ -91,6 +89,7 @@
 {% assets "js_all" %}
     <script type="text/javascript" src="{{ ASSET_URL }}"></script>
 {% endassets %}
+    <script type="text/javascript" src="{{ url_for('static', filename='libs/bootstrap-validate/js/validator.min.js') }}"></script>
 {% block js %}{% endblock %}
 <!-- end scripts -->
 {% endblock %}

@@ -19,10 +19,12 @@
 #
 # Filename:  by: andrek
 # Timesamp: 10/4/16 :: 12:42 AM
-from flask import Blueprint, render_template, session, current_app
+from flask import Blueprint, render_template, session, current_app, request
 from flask_login import login_required
 from flask_themes2 import render_theme_template
 from op_mon.utils import admin_required
+
+from op_mon.admin.forms import AddHostForm
 
 blueprint = Blueprint('admin', __name__, url_prefix='/admin', static_folder='../static')
 
@@ -30,4 +32,6 @@ blueprint = Blueprint('admin', __name__, url_prefix='/admin', static_folder='../
 #@admin_required
 def hosts():
     """List members."""
-    return render_theme_template(session.get('theme', current_app.config['DEFAULT_THEME']), 'users/dashboard.html')
+    hostform=AddHostForm(request.form)
+    return render_theme_template(session.get('theme', current_app.config['DEFAULT_THEME']),
+                                 'admin/dashboard.html', hostform=hostform)

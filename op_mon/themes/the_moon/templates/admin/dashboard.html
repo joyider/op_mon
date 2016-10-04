@@ -2,8 +2,196 @@
 {% extends theme('layout.html') %}
 
 {% block content %}
-<div class="body-content">
+                    <!-- BEGIN PAGE BREADCRUMB -->
+                    <ul class="page-breadcrumb breadcrumb">
+                        <li>
+                            <a href="index.html">Home</a>
+                            <i class="fa fa-circle"></i>
+                        </li>
+                        <li>
+                            <span class="active">UI Features</span>
+                        </li>
+                    </ul>
+                    <!-- END PAGE BREADCRUMB -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="note note-success">
+                                <h4 class="block">Bootstrap Native Modals</h4>
+                                <p> Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults. If you need more control over the Bootstrap Modals please check out
+                                    <a class="btn btn-outline red" href="ui_extended_modals.html">
+                                    extended modals plugin</a>
+                                </p>
+                            </div>
+                            <!-- BEGIN PORTLET-->
+                            <div class="portlet light bordered">
+                                <div class="portlet-title">
+                                    <div class="caption">
+                                        <i class="icon-bubble font-green-sharp"></i>
+                                        <span class="caption-subject font-green-sharp sbold">Add Tergets</span>
+                                    </div>
+                                    <div class="actions">
+                                        <div class="btn-group">
+                                            <a class="btn green-haze btn-outline btn-circle btn-sm" href="javascript:;" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> Actions
+                                                <i class="fa fa-angle-down"></i>
+                                            </a>
+                                            <ul class="dropdown-menu pull-right">
+                                                <li>
+                                                    <a href="javascript:;"> Do we need 1</a>
+                                                </li>
+                                                <li class="divider"> </li>
+                                                <li>
+                                                    <a href="javascript:;">Do we need 2</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">Do we need 3</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">Do we need 4</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="portlet-body">
+                                    <table class="table table-hover table-striped table-bordered">
+                                        <tr>
+                                            <td> Add Host </td>
+                                            <td>
+                                                <a class="btn red btn-outline sbold" data-toggle="modal" href="#addhost"> Add Host </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td> Add Database </td>
+                                            <td>
+                                                <a class="btn green btn-outline sbold" data-toggle="modal" href="#adddb"> Add Database </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <div class="modal fade bs-modal-lg" id="addhost" tabindex="-1" role="dialog" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content">
 
-</div>
+                                                <div class="modal-body">
+                                                    <div class="portlet box green">
+                                            <div class="portlet-title">
+                                                <div class="caption">
+                                                    <i class="fa fa-server"></i>Add Host</div>
+                                                <div class="tools">
+                                                    <a href="javascript:;" class="collapse"> </a>
+                                                    <a href="#portlet-config" data-toggle="modal" class="config"> </a>
+                                                    <a href="javascript:;" class="reload"> </a>
+                                                    <a href="javascript:;" class="remove"> </a>
+                                                </div>
+                                            </div>
+                                            <div class="portlet-body form">
+                                                <!-- BEGIN FORM-->
+                                                <form action="#" class="form-horizontal" data-toggle="validator">
+                                                    <div class="form-body">
+                                                        <div class="form-group">
+                                                            <label class="col-md-3 control-label">Hostname</label>
+                                                            <div class="col-md-4">
+                                                                <div class="input-group">
+                                                                    <span class="input-group-addon input-circle-left">
+                                                                        <i class="fa fa-server"></i>
+                                                                    </span>
+                                                                {{ hostform.hostname(placeholder="Hostname", class_="form-control input-circle-right") }}</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-md-3 control-label">Username</label>
+                                                            <div class="col-md-4">
+                                                                <div class="input-group">
+                                                                    <span class="input-group-addon input-circle-left">
+                                                                        <i class="fa fa-user"></i>
+                                                                    </span>
+                                                                {{ hostform.username(placeholder="Username", class_="form-control input-circle-right") }}</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-md-3 control-label">Password</label>
+                                                            <div class="col-md-4">
+                                                                <div class="input-group">
+                                                                    <span class="input-group-addon input-circle-left">
+                                                                        <i class="fa fa-user-secret"></i>
+                                                                    </span>
+                                                                {{ hostform.password(placeholder="Password", class_="form-control input-circle-right", **{'data-minlength':'6'}) }}
+                                                                </div>
+                                                                <div class="help-block">Minimum of 6 characters</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-md-3 control-label">Confirm</label>
+                                                            <div class="col-md-4">
+                                                                <div class="input-group">
+                                                                    <span class="input-group-addon input-circle-left">
+                                                                        <i class="fa fa-user-secret"></i>
+                                                                    </span>
+                                                                {{ hostform.confirm(placeholder="Password", class_="form-control input-circle-right", **{'data-match':'#password','data-match-error':'Whoops, Password missmatch!'}) }}
+                                                                </div>
+                                                                <div class="help-block with-errors"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-md-3 control-label">OS type</label>
+                                                            <div class="col-md-9">
+                                                                {{ hostform.isnix(placeholder="OS-Type", class_="make-switch", **{'data-on-text':'&nbsp;*Nix&nbsp;','data-off-text':'&nbsp;Win&nbsp;','data-size':'small', 'checked':'True'}) }}
+                                                            </div>
+                                                            <label class="col-md-3 control-label">Agent Type</label>
+                                                            <div class="col-md-9">
+                                                                {{ hostform.isremote(placeholder="OS-Type", class_="make-switch", **{'data-on-text':'&nbsp;Agent&nbsp;','data-off-text':'&nbsp;*Less&nbsp;','data-size':'small', 'checked':'True'}) }}
+                                                            </div>
+                                                            <label class="col-md-3 control-label">Agent Type</label>
+                                                            <div class="col-md-9">
+                                                                {{ hostform.isactive(placeholder="Active", class_="make-switch", **{'data-size':'small', 'checked':'True'}) }}
+                                                            </div>
+                                                        </div>
+                                                    <div class="form-actions">
+                                                        <div class="row">
+                                                            <div class="col-md-offset-3 col-md-9">
+                                                                <button type="submit" class="btn btn-circle green">Submit</button>
+                                                                <button type="button" class="btn btn-circle grey-salsa btn-outline">Cancel</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                                <!-- END FORM-->
+                                            </div>
+                                        </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn dark btn-outline" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn green">Save changes</button>
+                                                </div>
+                                            </div>
+                                            <!-- /.modal-content -->
+                                        </div>
+                                        <!-- /.modal-dialog -->
+                                    </div>
+                                    <!-- /.modal -->
+                                    <div class="modal fade bs-modal-lg" id="adddb" tabindex="-1" role="dialog" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                                    <h4 class="modal-title">Add Host</h4>
+                                                </div>
+                                                <div class="modal-body"> Modal body goes here </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn dark btn-outline" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn green">Save changes</button>
+                                                </div>
+                                            </div>
+                                            <!-- /.modal-content -->
+                                        </div>
+                                        <!-- /.modal-dialog -->
+                                    </div>
+                                    <!-- /.modal -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 {% endblock %}
 
