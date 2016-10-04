@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """User models."""
 import datetime as dt
-from uuid import uuid1
+from uuid import uuid5, NAMESPACE_DNS
 
 from flask_login import UserMixin
 
@@ -28,7 +28,7 @@ class Role(SurrogatePK, Model):
 
 class Host(SurrogatePK, Model):
 	__tablename__ = 'hosts'
-	uuid = Column(db.String(36), unique=True, nullable=False)
+	uuid = Column(db.String(48), unique=True, nullable=False)
 	hostname = Column(db.String(255), nullable=False)
 	ip = Column(db.String(15), nullable=True)
 	username = Column(db.String(32), nullable=False)
@@ -38,24 +38,15 @@ class Host(SurrogatePK, Model):
 	nix = Column(db.Boolean(), default=True)
 	remote = Column(db.Boolean(), default=True)
 
-	def __init__(self, hostname, ip, username, password, **kwargs):
-		db.Model.__init__(self, uuid=uuid, hostname=hostname, ip=ip, username=username, password=password, **kwargs)
+	def __init__(self, hostname, username, password, **kwargs):
+		db.Model.__init__(self, uuid=str(uuid5(NAMESPACE_DNS, str(hostname))), hostname=hostname, username=username,
+		                  password=password, ip='0.0.0.0', **kwargs)
 		self.set_password(password)
-		self.set_uuid(hostname)
 
 
 	def set_password(self, password):
 		"""Set password."""
 		self.password = bcrypt.generate_password_hash(password)
-
-
-	def set_uuid(self,hostname):
-		"""
-
-		:param hostname:
-		:return: Uuid for the host
-		"""
-		self.uuid = uuid1(hostname)
 
 
 	def __repr__(self):

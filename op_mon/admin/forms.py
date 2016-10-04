@@ -45,4 +45,8 @@ class AddHostForm(Form):
 		initial_validation = super(AddHostForm, self).validate()
 		if not initial_validation:
 			return False
+		self.host = Host.query.filter_by(hostname=self.hostname.data).first()
+		if self.host:
+			self.username.errors.append('Host already exists')
+			return False
 		return True
