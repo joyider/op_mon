@@ -2,6 +2,10 @@
 op_mon
 ===============================
 
+.. image:: https://badges.gitter.im/joyider/op_mon.svg
+   :alt: Join the chat at https://gitter.im/joyider/op_mon
+   :target: https://gitter.im/joyider/op_mon?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
+
 Oracle Python Monitor
 
 
